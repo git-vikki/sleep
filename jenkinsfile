@@ -1,0 +1,23 @@
+pipeline
+{
+  agent any
+  stages
+  {
+    stage ('cloning the code')
+    {
+      steps
+      {
+       script {
+                 sh ' git clone /opt/'
+                }
+      }
+    }
+    stage ('i am checking out my code from ')
+    {
+      steps
+      {
+        sh 'echo "i am failed"'
+      }
+    }
+  }
+}
